@@ -98,32 +98,12 @@
                 </a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#"
+                <a
+                  class="navigation-link"
+                  href="{{url_for('.home', _anchor='todo')}}"
                   ><i class="fa-solid fa-gear"></i>
                   <span class="me-2">Services</span></a
                 >
-                <ul class="navigation-dropdown">
-                  <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-link" href="#todo"
-                      >DNA Testing</a
-                    >
-                  </li>
-                  <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-link" href="#todo"
-                      >Food DNA</a
-                    >
-                  </li>
-                  <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-link" href="#todo"
-                      >DNA Sequencing</a
-                    >
-                  </li>
-                  <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-link" href="#todo"
-                      >PCR Primers</a
-                    >
-                  </li>
-                </ul>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#"
@@ -132,7 +112,9 @@
                 >
                 <ul class="navigation-dropdown">
                   <li class="navigation-dropdown-item">
-                    <a class="navigation-dropdown-link" href="#welcome"
+                    <a
+                      class="navigation-dropdown-link"
+                      href="{{url_for('.home', _anchor='welcome')}}"
                       >Company Profile</a
                     >
                   </li>

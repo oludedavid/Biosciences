@@ -32,33 +32,39 @@
               We'll write rarely, but only the best content.
             </p>
             <!-- Body -->
-            <div class="md-form">
-              <i class="fas fa-user prefix grey-text"></i>
-              <input type="text" id="form-name" class="form-control" />
-              <label for="form-name">Your name</label>
-            </div>
-            <div class="md-form">
-              <i class="fas fa-envelope prefix grey-text"></i>
-              <input type="text" id="form-email" class="form-control" />
-              <label for="form-email">Your email</label>
-            </div>
-            <div class="md-form">
-              <i class="fas fa-tag prefix grey-text"></i>
-              <input type="text" id="form-Subject" class="form-control" />
-              <label for="form-Subject">Subject</label>
-            </div>
-            <div class="md-form">
-              <i class="fas fa-pencil-alt prefix grey-text"></i>
-              <textarea
-                id="form-text"
-                class="form-control md-textarea"
-                rows="3"
-              ></textarea>
-              <label for="form-text">Send message</label>
-            </div>
-            <div class="text-center">
-              <button class="btn btn-light-blue">Submit</button>
-            </div>
+            <form
+              action="mailto:Zenebiosciences@gmail.com"
+              method="get"
+              enctype="text/plain"
+            >
+              <div class="md-form">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input type="text" id="form-name" class="form-control" />
+                <label for="form-name">Your name</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="text" id="form-email" class="form-control" />
+                <label for="form-email">Your email</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-tag prefix grey-text"></i>
+                <input type="text" id="form-Subject" class="form-control" />
+                <label for="form-Subject">Subject</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                <textarea
+                  id="form-text"
+                  class="form-control md-textarea"
+                  rows="3"
+                ></textarea>
+                <label for="form-text">Send message</label>
+              </div>
+              <div class="text-center">
+                <input type="submit" name="submit" value="Send" />
+              </div>
+            </form>
           </div>
         </div>
         <!-- Form with header -->

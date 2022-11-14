@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+{% block cssLinks %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{url_for('static', filename='css/contact.css')}}"
+/>
+{% endblock %} {% block main %}
+<div class="container my-4">
+  <!-- Section: Contact v.1 -->
+  <section class="my-5 form-cont">
+    <!-- Section heading -->
+    <h2 class="h1-responsive font-weight-bold text-center my-8">Contact us</h2>
+    <!-- Section description -->
+    <p class="text-center w-responsive mx-auto pb-5">
+      We would like to get in touch with you. You can send us a message
+      regarding your research and future collaboration
+    </p>
+
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-lg-5 mb-lg-0 mb-4">
+        <!-- Form with header -->
+        <div class="card">
+          <div class="card-body">
+            <!-- Header -->
+            <div class="form-header blue accent-1">
+              <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+            </div>
+            <p class="dark-grey-text">
+              We'll write rarely, but only the best content.
+            </p>
+            <!-- Body -->
+            <div class="md-form">
+              <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="form-name" class="form-control" />
+              <label for="form-name">Your name</label>
+            </div>
+            <div class="md-form">
+              <i class="fas fa-envelope prefix grey-text"></i>
+              <input type="text" id="form-email" class="form-control" />
+              <label for="form-email">Your email</label>
+            </div>
+            <div class="md-form">
+              <i class="fas fa-tag prefix grey-text"></i>
+              <input type="text" id="form-Subject" class="form-control" />
+              <label for="form-Subject">Subject</label>
+            </div>
+            <div class="md-form">
+              <i class="fas fa-pencil-alt prefix grey-text"></i>
+              <textarea
+                id="form-text"
+                class="form-control md-textarea"
+                rows="3"
+              ></textarea>
+              <label for="form-text">Send message</label>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-light-blue">Submit</button>
+            </div>
+          </div>
+        </div>
+        <!-- Form with header -->
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-7">
+        <!--Google map-->
+        <div
+          id="map-container-section"
+          class="z-depth-1-half map-container-section mb-4"
+          style="height: 400px"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6891.044276882054!2d5.248958111092447!3d7.256107757389972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10479042458ee129%3A0x9dcf732e9b175466!2sSunshine%20Gardens%20Estate%20Akure!5e0!3m2!1sen!2sde!4v1668301216417!5m2!1sen!2sde"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- Buttons-->
+        <div class="row text-center">
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1">
+              <i class="fas fa-map-marker-alt"></i>
+            </a>
+            <p>Akure, Ondo State</p>
+            <p class="mb-md-0">Nigeria</p>
+          </div>
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1">
+              <i class="fas fa-phone"></i>
+            </a>
+            <p>+234</p>
+            <p class="mb-md-0">{{time}}</p>
+          </div>
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <p>Zenebiosciences@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </section>
+  <!-- Section: Contact v.1 -->
+</div>
+{% endblock %}

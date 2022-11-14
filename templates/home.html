@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+{% block cssLinks %} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}" />
+{% endblock %} {% block main %}
+<!-- Introduction container -->
+<section class="slide h-100" id="introduction">
+  <div class="slide-content">
+    <img src="{{url_for('static', filename='images/institute.jpg')}}" alt="" />
+    <div class="content-2">
+      <div class="content">
+        <h2 class="text-white">Zene Biosciences Ltd.</h2>
+        <p class="para">assdjdfjfjfjgjgjgj</p>
+        <div class="button-cont">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-content">
+    <img src="{{url_for('static', filename='images/research.jpg')}}" alt="" />
+    <div class="content-2">
+      <div class="content">
+        <p class="para">assdjdfjfjfjgjgjgj</p>
+        <div class="button-cont">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-content">
+    <img src="{{url_for('static', filename='images/training.jpeg')}}" alt="" />
+    <div class="content-2">
+      <div class="content">
+        <p class="para">assdjdfjfjfjgjgjgj</p>
+        <div class="button-cont">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- welcome container -->
+<section class="welcome-container" id="welcome">
+  <h1>Welcome to Zene Biosciences where Nature Meets Science</h1>
+  <section class="welcome-content-container">
+    <section
+      class="welcome-image"
+      data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="linear"
+      data-aos-duration="900"
+    >
+      <img src="{{url_for('static', filename='images/molecule.jpg')}}" alt="" />
+    </section>
+    <p>
+      We are a passionate life science team with a mission to improve bioscience
+      research ad applications. We sell reagents, supplies, provide all
+      year-round training through workshops, individual and customized coaching
+      and operate a lab for conducting research.
+    </p>
+  </section>
+
+  <section class="welcome-content-container2">
+    <section
+      class="welcome-image"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="900"
+    >
+      <img
+        src="{{url_for('static', filename='images/personnel.jpg')}}"
+        alt=""
+      />
+    </section>
+    <p>
+      Our team of experts provide research and technical support to individuals,
+      small and medium sized companies, institutions and government agencies to
+      optimize their research performance and output.
+    </p>
+  </section>
+</section>
+
+<!-- What we do -->
+<section class="task" id="todo">
+  <h1 class="p-3">What we do...</h1>
+  <section class="company-task">
+    <!-- research card -->
+    <section class="card">
+      <figure>
+        <i class="fa-solid fa-microscope fa-2x"></i>
+      </figure>
+      <h3>Laboratory Test</h3>
+      <p>
+        Provision of relevant and adequate services for high-level research
+        work.
+      </p>
+    </section>
+    <!-- screening card -->
+    <section class="card">
+      <figure>
+        <i class="fa-solid fa-dna fa-2x"></i>
+      </figure>
+      <h3>Screening</h3>
+      <p>Baby Screening, DNA Testing and Parentage DNA Testing</p>
+    </section>
+    <!-- lab rent card -->
+    <section class="card">
+      <figure>
+        <i class="fa-solid fa-flask-vial fa-2x"></i>
+      </figure>
+      <h3>Lab Rent</h3>
+      <p>
+        Introducing affordable biotech equipment packages to set up full lab for
+        teaching and research.
+      </p>
+    </section>
+    <!-- training-->
+    <section class="card">
+      <figure>
+        <i class="fa-solid fa-dna fa-2x"></i>
+      </figure>
+      <h3>Training</h3>
+      <p>
+        Equipped with the best modern equipment for molecular biology analysis.
+      </p>
+      <a
+        href="#myModal"
+        role="button"
+        class="btn btn-lg btn-primary"
+        data-bs-toggle="modal"
+        >Book a quote</a
+      >
+
+      <!-- Modal HTML -->
+      <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Confirmation</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input
+                  type="email"
+                  id="defaultForm-email"
+                  class="form-control validate"
+                />
+                <label
+                  data-error="wrong"
+                  data-success="right"
+                  for="defaultForm-email"
+                  >Your email</label
+                >
+              </div>
+
+              <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input
+                  type="password"
+                  id="defaultForm-pass"
+                  class="form-control validate"
+                />
+                <label
+                  data-error="wrong"
+                  data-success="right"
+                  for="defaultForm-pass"
+                  >Your password</label
+                >
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <figure>
+        <i class="fa-solid fa-dna fa-2x"></i>
+      </figure>
+      <h3>Training</h3>
+      <p>
+        Equipped with the best modern equipment for molecular biology analysis.
+      </p>
+
+      <button type="submit" class="btn">Book a Space</button> -->
+    </section>
+  </section>
+
+  <!-- Location -->
+  <section class="task mt-5" id="contact">
+    <h1 class="p-3">Locate Us</h1>
+    <section class="company-task">
+      <!-- google map -->
+      <section
+        class="google-box"
+        data-aos="flip-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="600"
+      >
+        <figure>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6891.044276882054!2d5.248958111092447!3d7.256107757389972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10479042458ee129%3A0x9dcf732e9b175466!2sSunshine%20Gardens%20Estate%20Akure!5e0!3m2!1sen!2sde!4v1668301216417!5m2!1sen!2sde"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </figure>
+      </section>
+      <!-- address -->
+      <section
+        class="address-box"
+        data-aos="flip-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="600"
+      >
+        <h3>Contact Details</h3>
+        <a href="{{url_for('contact')}}">Contact Us</a>
+      </section>
+    </section>
+  </section>
+
+  {% endblock %} {% block javascriptSource %} {{ super() }}
+  <script>
+    $(document).ready(function () {});
+  </script>
+  <script src="{{url_for('static', filename='js/home.js')}}"></script>
+  {% endblock %}
+</section>

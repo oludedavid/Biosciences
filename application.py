@@ -40,7 +40,3 @@ def service():
 def contact():
     time = datetime.datetime.utcnow()
     return render_template("contact.html", time=time)
-
-
-if __name__ == "__main__":
-    application.run(debug=True)

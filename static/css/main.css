@@ -8,9 +8,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 main {
-  margin-top: 90px;
+  margin-top: 15px;
   overflow: hidden;
 }
 
@@ -38,7 +39,7 @@ main {
   height: 100vh;
   position: absolute;
   background: #272727;
-  z-index: 1000;
+  z-index: 10000;
 }
 .page-loader .txt {
   color: #666;

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="rvoUvA5tQ2peAjX32ooPg-PITMPujnYOcorwPO1CRYs"
+    />
     {% block cssLinks %}
     <!-- super slides -->
     <link
@@ -59,13 +63,13 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    <div class="page-loader">
-      <div class="spinner"></div>
-      <div class="txt">Zene<br />Biosciences</div>
-    </div>
     <section class="content">
+      <div class="page-loader">
+        <div class="spinner"></div>
+        <div class="txt">Zene<br />Biosciences</div>
+      </div>
       <header>
-        <nav id="navigation" class="navigation navigation-justified fixed-top">
+        <nav id="navigation" class="navigation navigation-justified">
           <div class="navigation-header">
             <!-- Logo -->
             <div class="navigation-logo">
@@ -135,22 +139,7 @@
         </nav>
       </header>
       <main>{% block main %}{% endblock %}</main>
-      <footer>
-        <p>Reach on social media platform:</p>
-        <ul>
-          <li>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
-          <li>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-        </ul>
-        &copy;Zene Bioscience Ltd. <em id="date"></em>
-      </footer>
+      <footer>&copy;Zene Bioscience Ltd. <em id="date"></em></footer>
     </section>
 
     {% block javascriptSource %}
